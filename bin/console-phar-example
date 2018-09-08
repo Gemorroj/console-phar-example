@@ -1,10 +1,17 @@
 #!/usr/bin/env php
 <?php
+require __DIR__.'/../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 use ConsolePharExample\Command\AwesomeCommand;
+use Composer\XdebugHandler\XdebugHandler;
 
-require __DIR__.'/../vendor/autoload.php';
+
+// Restart without xdebug
+$xdebug = new XdebugHandler('AwesomeApp', '--ansi');
+$xdebug->check();
+unset($xdebug);
+
 
 $application = new Application(
     'Console phar example project',

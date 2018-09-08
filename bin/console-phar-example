@@ -6,7 +6,10 @@ use ConsolePharExample\Command\AwesomeCommand;
 
 require __DIR__.'/../vendor/autoload.php';
 
-$application = new Application();
+$application = new Application(
+    'Console phar example project',
+    '1.0.0'
+);
 
 $application->add(new AwesomeCommand());
 

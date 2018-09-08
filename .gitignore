@@ -1,0 +1,10 @@
+.idea
+composer.phar
+composer.lock
+vendor/
+box.json
+box.phar
+phpunit.xml
+console-phar-example.phar
+.php_cs
+.php_cs.cache

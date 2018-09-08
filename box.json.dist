@@ -1,0 +1,34 @@
+{
+    "banner": [
+        "Console phar example project.",
+        "",
+        "(c) Gemorroj",
+        "",
+        "This source file is subject to the MIT license that is bundled",
+        "with this source code in the file LICENSE."
+    ],
+    "compactors": [
+        "Herrera\\Box\\Compactor\\Json",
+        "Herrera\\Box\\Compactor\\Php"
+    ],
+    "directories": ["src"],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                ".gitignore",
+                ".md",
+                "phpunit",
+                "Tester",
+                "Tests",
+                "tests"
+            ],
+            "in": "vendor"
+        }
+    ],
+    "compression": "GZ",
+    "chmod": "0755",
+    "main": "bin/console-phar-example",
+    "output": "console-phar-example.phar",
+    "stub": true
+}
